@@ -1,0 +1,318 @@
+*{
+    font-family:'Courier New', Courier;
+    /*transition: 0.2s;*/
+}
+
+html{
+    transition: 0.5s ease-in-out;
+}
+
+
+body{
+    display : grid;
+    justify-items: center;
+    margin:0.5px;
+}
+
+#logo{
+    width: 20%;
+}
+
+.logo{
+    width: 80%;
+    align-self: flex-start;
+    text-align : center;
+    border-collapse: collapse;
+}
+
+.logo img{
+    width: 40%;
+}
+
+.logo table, .logo th, .logo td {
+    border: hidden;
+    background-color: rgb(0, 255, 213);
+}
+
+.logo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px 0px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.logo th, .logo td {
+    padding: 0px 0px;
+    background-color:none;
+}
+
+.logo th {
+    color: #000000;
+    text-transform: none;
+    letter-spacing: 0.1em;
+}
+
+nav{
+    width : 50%;
+    display : flex;
+    justify-content: space-around;
+    border:1px solid black;
+    width:100%;
+    border-radius:5px;
+}
+
+.buttonplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%; 
+    width : 5%;
+    background-color: #6aeb6e;
+    border-radius : 10%;
+    border-color : #22db18;
+    color:white;
+    text-decoration: none;
+    box-shadow:1px 1px black;
+    width:fit-content;
+    height:fit-content;
+    padding:1%; 
+}
+.buttonplay:active{
+    box-shadow:inset 1px 1px black;
+}
+
+
+.navbutton{
+    color : black;
+    padding:10px;
+    text-decoration: none;
+    font-size: 120%;
+    transition:0.2s;
+}
+.navbutton:hover{
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+.headerall{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 255, 213);
+    width:100%;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+
+.contentpage{
+    max-width: 80vw;
+    height: fit-content;
+    background-color: rgb(237, 237, 237);
+    padding:10px;
+    gap:10px;
+    border-radius: 10px;
+    margin:10px;
+}
+
+tr{
+    line-height: 0px;
+}
+
+body{
+    overflow:scroll;
+}
+.button{
+    width: 101px;
+    height: 101px;
+    border: none;
+    padding: 0px;
+}
+
+.tdgame{
+    padding:0px;
+}
+
+
+#controlbuttons{
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+    padding:15px;
+    width:30vw;
+    flex-wrap: wrap;
+    background-color:rgb(237, 237, 237);
+    margin:10px;
+    border-radius: 10px;;
+}
+
+#timer{
+    display: flex;
+    padding:15px;
+    margin:10px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height:fit-content;
+    background-color: rgb(0, 255, 213);
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 50px;
+    border-radius: 2px;
+    bottom:0px;
+}
+
+.divfooter{
+    display: flex;
+    justify-items: center;
+    padding:10px;
+    margin:5px;
+    flex-direction: column;
+}
+
+#logofooter{
+    max-width:150px;
+}
+
+
+/*Bouton toggle permettant de passer au thème sombre */
+#themeswitch{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: left;
+    width: 45px;
+    height: 20px;
+    border: solid 3px rgb(222, 222, 222);
+    border-radius: 50px;
+    padding:0px;
+    background-color: rgb(222, 222, 222);
+    transition: 0.2s ease-in-out;
+    z-index: 20;
+}
+
+html h1{
+    transition: 0.2s ease-in-out;
+}
+
+#cercle{
+    width:20px;
+    height:20px;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250);
+    position: relative;
+    box-shadow: 0px 0px 3px grey;
+    transition:0.2s ease-in-out;
+}
+
+.contentpage table {
+    border-style: none;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border-radius: 10%;
+}
+
+.contentpage th,  .contentpage td, .contentpage tr{
+    width: 50px;
+    height: 50px;
+}
+
+#hautgame{
+    display: flex;
+    align-items: center;
+}
+
+#menuindex{
+    display: flex;
+    width: max-content;
+    flex-direction: row;
+    width: 574px;
+    gap: 20px;
+    justify-content: center;
+}
+
+th{
+    padding:20px;
+}
+
+
+input[type='number'] {
+    width: 30px;
+    size: 20px;
+    font-size: 25px;
+    background-color: rgb(237, 237, 237);
+    border: 0px;
+    font-weight: bold;
+    z-index: 20;
+}
+
+
+.text-and-image{
+    display: flex;
+    align-items: center;
+}
+
+
+.pirate img{
+    width: 191px;
+    padding: 10px;
+}
+
+
+.headerTh{
+    border:1px solid rgba(255, 255, 255, 0);
+    transition: 0.1s;
+}
+
+.headerTh:hover{
+    box-shadow:  inset 0 0 0.25em black;
+    transition: 0.1s;
+}
+.headerTh:active{
+    box-shadow:  inset 0 0 0.5em black;
+    transition: 0.05s;
+}
+
+.Exemple_rules {
+    max-width: 80vw;
+    height: fit-content;
+    background-color: rgb(237, 237, 237);
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.Step img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.Step {
+    display: flex;
+    align-items: center;
+}
+
+.imgcontent{
+    height:50px;
+}
+
+.divimages{
+    display: flex;
+    align-items: center;
+}
+
+.pimage{
+    margin:10px;
+}
