@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
+//Programme principal du solveur
 int main(int argc, char* argv[]) {
 	if (argc < 10)
 		return -1;
