@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
 	char nboats5 = argv[9][0] - '0';
 
 	Grid* playGrid;
-	
+	//Tests des fonctions
 	newGrid(&playGrid, size, horizontalValues, verticalValues, field, nboats1, nboats2, nboats3, nboats4, nboats5, 0, NULL);
 
 	int i = 0;
