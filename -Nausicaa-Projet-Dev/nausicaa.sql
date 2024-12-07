@@ -1,12 +1,31 @@
 -- phpMyAdmin SQL Dump
 -- version 5.1.2
 -- https://www.phpmyadmin.net/
+--
+-- Hôte : localhost:3306
+-- Généré le : ven. 14 juin 2024 à 17:29
+-- Version du serveur : 5.7.24
+-- Version de PHP : 8.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données : `nausicaa`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `leaderboard`
+--
 
 CREATE TABLE `leaderboard` (
   `Difficulty` int(11) NOT NULL,
@@ -27,7 +46,11 @@ INSERT INTO `leaderboard` (`Difficulty`, `Time1`, `Time1Player`, `Time2`, `Time2
 (1, 27, 'Faustine', 32, 'Esther', 39, 'Yazid'),
 (3, 192, 'Erwann', 227, 'Paul', 254, 'Esther');
 
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `maps`
+--
 
 CREATE TABLE `maps` (
   `Id` int(11) NOT NULL,
@@ -72,7 +95,11 @@ INSERT INTO `maps` (`Id`, `Difficulty`, `Size`, `HorizontalValues`, `VerticalVal
 (87, 3, 8, '1/4/1/3/1/4/0/5', '4/2/2/1/3/1/1/5', '0/0/0/0/0/0/0/0!0/0/0/0/0/0/0/0!0/0/0/0/0/0/0/0!0/0/0/0/0/0/0/0!0/0/0/0/0/0/0/0!0/3/0/0/0/0/0/0!0/0/0/0/0/0/0/0!0/6/0/0/0/6/0/7', 'Auto', 0, 'Null', 0, 3, 3, 2, 1, 0),
 (96, 3, 10, '1/1/2/4/0/4/1/4/2/1', '1/1/4/1/3/2/2/3/3/0', '0/0/0/0/0/0/0/0/0/0!0/0/0/0/0/0/0/0/0/0!0/0/0/0/0/0/0/0/0/0!0/0/0/0/0/0/0/0/0/0!0/0/0/0/0/0/0/0/0/0!0/0/0/0/0/0/6/0/7/0!0/0/0/0/0/0/0/0/0/0!0/0/3/0/0/0/0/7/0/0!0/0/4/0/0/0/0/0/0/0!0/0/0/0/0/0/0/0/0/0', 'Auto', 0, 'Null', 0, 4, 3, 2, 1, 0);
 
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `mapsplayed`
+--
 
 CREATE TABLE `mapsplayed` (
   `MapId` int(11) NOT NULL,
@@ -81,7 +108,9 @@ CREATE TABLE `mapsplayed` (
   `PlayedTimes` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
 -- Déchargement des données de la table `mapsplayed`
+--
 
 INSERT INTO `mapsplayed` (`MapId`, `PlayerId`, `BestTime`, `PlayedTimes`) VALUES
 (66, 7, 27, 2),
@@ -103,8 +132,11 @@ INSERT INTO `mapsplayed` (`MapId`, `PlayerId`, `BestTime`, `PlayedTimes`) VALUES
 (80, 2, 226, 1),
 (72, 2, 256, 1);
 
+-- --------------------------------------------------------
 
+--
 -- Structure de la table `statistics`
+--
 
 CREATE TABLE `statistics` (
   `NumberOfMaps` int(11) NOT NULL,
@@ -114,13 +146,19 @@ CREATE TABLE `statistics` (
   `NumberGamesWon` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
 -- Déchargement des données de la table `statistics`
+--
 
 INSERT INTO `statistics` (`NumberOfMaps`, `NumberOfPlayers`, `NumberOfPlayedGames`, `TotalTimePlayed`, `NumberGamesWon`) VALUES
 (19, 7, 52, 5417, 36),
 (19, 7, 52, 5417, 36);
 
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `users`
+--
 
 CREATE TABLE `users` (
   `Id` int(11) NOT NULL,
@@ -131,7 +169,9 @@ CREATE TABLE `users` (
   `Admin` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
 -- Déchargement des données de la table `users`
+--
 
 INSERT INTO `users` (`Id`, `Username`, `Email`, `Password`, `GamesWon`, `Admin`) VALUES
 (2, 'admin', 'admin@admin.com', 'admin', 5, 1),
@@ -142,25 +182,39 @@ INSERT INTO `users` (`Id`, `Username`, `Email`, `Password`, `GamesWon`, `Admin`)
 (9, 'Yazid', 'yazid@mail.com', 'Yazid', 5, 0),
 (10, 'Paul', 'paul@mail.com', 'Paul', 5, 0);
 
+--
 -- Index pour les tables déchargées
--- Index pour la table `maps`
+--
 
+--
+-- Index pour la table `maps`
+--
 ALTER TABLE `maps`
   ADD PRIMARY KEY (`Id`);
 
+--
 -- Index pour la table `users`
-
+--
 ALTER TABLE `users`
   ADD PRIMARY KEY (`Id`);
 
+--
 -- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
 -- AUTO_INCREMENT pour la table `maps`
+--
 ALTER TABLE `maps`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 
 --
 -- AUTO_INCREMENT pour la table `users`
-
+--
 ALTER TABLE `users`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
