@@ -5,7 +5,7 @@
         Tel : (+33)623456789<br><br>
         
         Dark mode
-        <!--Toggle thème sombre-->
+        <! thème sombre-->
         <div id="themeswitch">
             <div id="cercle"></div>
         </div>
