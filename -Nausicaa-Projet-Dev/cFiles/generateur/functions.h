@@ -1,4 +1,5 @@
 #pragma once
+// structure de la grille 
 typedef struct Grid {
 
 	int size;
