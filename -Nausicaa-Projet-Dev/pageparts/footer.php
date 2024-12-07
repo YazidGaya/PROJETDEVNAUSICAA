@@ -16,12 +16,8 @@
     <div  class="divfooter">Website realized by :
 
     <ul>
-        <li>Paul FOURNET</li>
-        <li>Erwann LELU DE BRACH</li>
-        <li>Faustine COUSIN</li>
-        <li>Esther THEETEN</li>
-        <li>Simon FEREZ</li>
         <li>Yazid GAYA</li>
+        <li>Florent HAGEN</li>
     </ul>    
     </div>
 </footer>
