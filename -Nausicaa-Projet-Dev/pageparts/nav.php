@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <iframe src="music.php" style="display: none;" id="music-frame"></iframe>
     <div class="headerall">
         <?php 
             require("database.php");
