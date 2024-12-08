@@ -1,24 +1,27 @@
+/* Styles appliqués à la balise <main> */
 main {
-    display: flex;
-    position: relative;
-    justify-content: center;
+    display: flex;/* Utilisation de flexbox pour organiser le contenu */
+    position: relative;/* Position relative pour permettre des positions absolues */
+    justify-content: center;/* Centre horizontalement les éléments  */
     align-items: center;
     box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
+    width: 100vw;/* Prend toute la largeur de la fenêtre */
+    height: 100vh;/* Prend toute la hauteur de la fenêtre */
 }
-
+/* Importation de la police Quicksand depuis Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
+/* Styles globaux pour tous les éléments */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0;/* Supprime les marges par défaut */
+    padding: 0;/* Supprime les espaces internes par défaut */
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
 }
 
+/* Styles pour la balise <body> */
 body {
-    display: flex;
+    display: flex;/* Utilisation de flexbox */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -34,16 +37,18 @@ body {
     overflow: hidden;
 }
 
+/* Style pour les étiquettes des champs mémorisés */
 .remember-for label {
     color: white;
     width: 100%;
     box-sizing: content-box;
 }
-
+/* Style pour les liens dans la section d'enregistrement */
 .register-link p {
     color: white;
 }
 
+/* Style pour l'élément avec la classe 'ring' */
 .ring {
     position: absolute;
     left: 50%;
@@ -60,6 +65,7 @@ body {
     border-radius: 70px 70px 70px 70px;
 }
 
+/* Mise en forme spécifique pour des sections */
 .remember-for {
     font-weight: bold;
     width: 100%;
@@ -97,6 +103,7 @@ body {
         color: #fff;
     }
 
+/* Styles pour le champ de saisie */
     .login .inputBx {
         position: relative;
         width: 100%;
@@ -146,6 +153,7 @@ body {
     margin: 30px 0;
 }
 
+/* Icône d'accueil personnalisée */
 #home_img {
     color: blue;
     position: absolute;
